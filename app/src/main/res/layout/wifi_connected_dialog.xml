@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wifi_dialog_bg">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wifi_dialog_show_bg">
+
+        <ImageView
+            android:id="@+id/close_wifi_dialog"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wifi_icon_close_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:text="输入WIFI密码"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle_btn_20">
+
+                <EditText
+                    android:id="@+id/wifi_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wifi_nitce_layout"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/wifi_notice_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/wifi_notice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/wifi_connect"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wifi_connect_bg" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
